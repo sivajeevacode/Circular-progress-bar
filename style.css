@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+/* colors */
+:root{
+    --wordcolor:#606060;
+    --bgcolor:#7d2ae8;
+    --coniccolor:conic-gradient(#7d2ae8 3.6deg,#ededed 0deg);
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bgcolor);
+}
+.container
+{
+    width: 325px;
+    background-color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    border-radius: 5px;
+}
+.progressbar
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background:var(--coniccolor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressvalue
+{
+    position: relative;
+    color: var(--bgcolor);
+    font-weight: 600;
+    font-size: 40px;
+}
+.progressbar::before
+{
+    content: '';
+    position: absolute;
+    width:220px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.name
+{
+    color:var(--wordcolor) ;
+    font-weight: 600;
+    font-size: 25px;
+}
